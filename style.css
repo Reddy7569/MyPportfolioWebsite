@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    width: 100%;
+    font-family: "Bree Serif";
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.section_p1{
+    padding: 40px 80px;
+}
+.section_m1{
+    margin: 20px 40px;
+}
+/* Nav Items */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+    padding: 20px 20px;
+    position: sticky;
+    background-color: #f2f3f4;
+    top: 0;
+    bottom: 0;
+}
+#header #nav{
+    display: flex;
+}
+#header #nav li{
+    list-style-type: none;
+}
+#header #nav li a {
+    text-decoration:  none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 0  25px;
+}
+#header #nav li a:hover{
+    background: -webkit-linear-gradient(
+        #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      
+}
+#header #nav li .Button{
+  padding: 10px 15px;
+  border: 0px;
+  background-color:#87cefa;
+  color: white;
+  border-radius: 10px;
+}
+#closed{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+/* main Css */
+#main{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f3f4;
+  align-items: center;
+  border: 1px solid #f2f3f4;
+  border-radius: 20px;
+  margin: 80px 100px;
+  box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+}
+.main_image{
+    height: 60vh;
+    width: 20vw;
+    margin: 0px;
+    order: 1;
+
+}
+.my_image{
+    height: 100%;
+    width: 100%;
+    background-position: top 70% right 20%;
+
+}
+.social_media a {
+font-size: 25px;
+color: black;
+margin: 10px 10px 0 0;
+}
+.social_media a:hover{
+    transition: 0.9s;
+    color:lightsteelblue;
+   
+}
+.main_content h1 {
+    font-size: 20px;
+}
+.main_content span{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+.main_content p{
+    font-size: 30px;
+}
+/* About me css */
+#AboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    
+}
+#AboutMe p{
+    font-size: 20PX;
+}
+#AboutMe p a{
+    color:  #f79d00;
+    text-decoration: none;
+}
+#AboutMe p a:hover{
+  text-decoration: underline;
+}
+/* skills css */
+#Skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f3f4;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.3);
+}
+.Skills_container{
+    height: 150px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 1000ms;
+}
+.Skills_container:hover{
+    transform: translatey(-0.75rem);
+    transition-duration: 1s;
+    background-color:transparent;
+    box-shadow: 2px 3px 20px rgb(0,0,0,0.3);
+    border: 1px solid rgb(242,243,244);
+}
+.skill_image{
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px;
+}
+.Skills_container p {
+    font-size: 15px;
+    align-self: center;
+}
+/* Projects */
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.food_munch{
+    background-image:url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+}
+.food_munch h1 {
+    padding: 10px 0;
+}
+.food_munch p {
+    line-height: 1.2rem;
+    padding: 15px 0;
+}
+.food_munch a {
+    color: #f79d00;
+}
+.E-commerce{
+    background-image: url(960x0.webp);
+    height: 50vh;
+    background-size: cover;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 0 ;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+}
+.E-commerce h1 {
+    padding: 10px 0;
+}
+.E-commerce p {
+    line-height: 1.2rem;
+    padding: 15px 0;
+}
+
+.E-commerce a {
+    color: #f79d00;
+}
+.Todos-Application {
+    background-image: url(boy-checking-giant-check-list-background_23-2148095182.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    color:black;
+    border-radius: 20px;
+    margin: 10px 0 ;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+}
+.Todos-Application h1 {
+    padding: 10px 0;
+}
+.Todos-Application p {
+    line-height: 1.2rem;
+    padding: 15px 0;
+}
+.Todos-Application a {
+    color: #f79d00;
+}
+.Wikipedia-Search-Application {
+    background-image: url(dictionary-definition-word_93675-129718.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    color:black;
+    border-radius: 20px;
+    margin: 10px 0 ;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+}
+.Wikipedia-Search-Application h1 {
+    padding: 10px 0;
+}
+.Wikipedia-Search-Application p {
+    line-height: 1.2rem;
+    padding: 15px 0;
+}
+.Wikipedia-Search-Application a {
+   
+    color:#f79d00;
+}
+#Footer{
+    text-align: center;
+    box-shadow: 10px 10px 20px rgb(0,0,0,0.7);
+    padding: 15px 0;
+}
+#Footer h1 {
+    font-size: 20px;
+}
+/* selected */
+#nav.selected{
+    right: 0px;
+}
+.sm_image{
+    display: none;
+}
+/* * media querys */ 
+@media(max-width:767px){
+    .mobile{
+        display: block;
+        cursor: pointer;
+    }
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding:80px 0 0 10px ;
+    }
+    #nav.selected{
+        right: 0px;
+    }
+    #nav li{
+        margin:0 0 20px 0;
+    }
+    #closed{
+        display:block;
+        cursor: pointer;
+    }
+    .section_p1 {
+        padding: 20px 20px;
+    }
+    #main {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 20px 20px;
+        
+    }
+    .my_image{
+        display: none;
+    }
+    .main_content p {
+        font-size: 15px;
+    }
+    .sm_image{
+        display: block;
+        order: 0;
+        width:100%;
+        height: 100%;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+    .main_image {
+        height: 40vh;
+        width: 40vw;
+    }
+    .main_content{
+        order: 1;
+    }
+    .main_content span {
+        font-size: 20px;
+        font-family: "Lobster";
+    }
+    .food_munch h1 {
+        font-size: 15px;
+    }
+    .E-commerce h1 {
+        font-size: 15px;
+    }
+    .Todos-Application h1 {
+        font-size: 15px;
+    }
+    .Todos-Application a {
+        color: lightgreen;
+    }
+    .Wikipedia-Search-Application h1 {
+        font-size: 15px;
+    }
+    .food_munch{
+        overflow-y: auto;
+    }
+    .E-commerce{
+        overflow-y: auto;
+    }
+    .Todos-Application{
+        overflow-y: auto;
+    }
+    .Wikipedia-Search-Application{
+        overflow-y: auto;
+    }
+}
